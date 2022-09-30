@@ -3,6 +3,14 @@ import Item from "../Item/Item";
 
 export default class List1 extends React.Component {
 
+    state = {
+        field: ''
+    }
+
+    shouldComponentUpdate(currProps, currState) {
+        return this.props.item.length !== currProps.items.length;
+    }
+
     render() {
 
         return(
