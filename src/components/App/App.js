@@ -13,7 +13,9 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    
+    for(let i = 0; i < 10; i++) {
+      
+    }
   }
   
   render() {
