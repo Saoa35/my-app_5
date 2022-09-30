@@ -1,4 +1,5 @@
 import React from 'react';
+import { faker } from '@faker-js/faker';
 import { v4 } from 'uuid';
 import List1 from '../List1/List1';
 import List2 from '../List2/List2';
