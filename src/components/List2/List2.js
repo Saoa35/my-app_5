@@ -1,13 +1,18 @@
 import React from "react";
+import Item from "../Item/Item";
 
 export default class List2 extends React.Component {
 
     render() {
 
         return(
-            <div>
-                List2
-            </div>
+            <ol>
+                <h2>List2</h2>
+
+                {this.props.items.map(element => {
+                    return <Item key={element.id} value={element.item}/>
+                })}
+            </ol>
         )
     }
 }
