@@ -9,6 +9,12 @@ export default class App extends React.Component {
     items: [],
     flag: true
   }
+
+  constructor(props) {
+    super(props);
+
+    
+  }
   
   render() {
 
