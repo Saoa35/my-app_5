@@ -1,4 +1,6 @@
 import React from 'react';
+import List1 from '../List1/List1';
+
 import './App.css';
 
 export default class App extends React.Component {
@@ -12,7 +14,7 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
-        
+        <List1/>
       </div>
     );
   }
