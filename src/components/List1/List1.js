@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "../Item/Item";
 
-export default class List1 extends React.Component {
+export default class List1 extends React.Component {   // React.PureComponent
 
     state = {
         field: ''

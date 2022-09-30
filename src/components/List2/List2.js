@@ -1,18 +1,17 @@
 import React from "react";
 import Item from "../Item/Item";
 
-export default class List2 extends React.Component {
+const List2 =  (props) => {
 
-    render() {
+    return(
+        <ol>
+            <h2>List2</h2>
 
-        return(
-            <ol>
-                <h2>List2</h2>
-
-                {this.props.items.map(element => {
-                    return <Item key={element.id} value={element.item}/>
-                })}
-            </ol>
-        )
-    }
+            {props.items.map(element => {
+                return <Item key={element.id} value={element.item}/>
+            })}
+        </ol>
+    )
 }
+
+export default React.memo(List2);
